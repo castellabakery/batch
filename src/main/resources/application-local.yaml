@@ -1,0 +1,70 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    hikari:
+      primary:
+        jdbc-url:
+        username:
+        password:
+        driver-class-name:
+        pool-name:
+        maximum-pool-size:
+        max-lifetime:
+        connection-test-query:
+      secondary:
+        jdbc-url:
+        username:
+        password:
+        driver-class-name:
+        pool-name:
+        maximum-pool-size:
+        max-lifetime:
+        connection-test-query:
+
+  jpa:
+    database-platform:
+    open-in-view: false
+    properties:
+      hibernate:
+        show-sql:
+        format_sql:
+        ddl-auto:
+  quartz:
+    job-store-type:
+  batch:
+    job:
+      enabled: false
+
+k:
+  pg:
+    filedownload:
+      host:
+      port:
+      download-type:
+      shop-ids:
+      keys:
+      origin-path:
+
+
+logging:
+  level:
+    root:
+    com:
+      zaxxer:
+        hikari:
+    jdbc:
+      resultset:
+      resultsettable:
+      audit:
+      sqltiming:
+      connection:
+    org.hibernate:
+      type:
+      SQL:
+    org.springframework.web:
+    javax.sql.DataSource:
+    log4jdbc.log4j2:
+
+db-configuration:

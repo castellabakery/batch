@@ -1,0 +1,10 @@
+server:
+  port: 20200
+
+spring:
+  profiles:
+    active: local
+
+mybatis:
+  mapper-locations: mapper/**/*.xml
+  config-location: classpath:/mybatis-config.xml
